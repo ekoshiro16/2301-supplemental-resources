@@ -1,4 +1,160 @@
-* {
-  background-color: black;
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --bg-color: black;
+  --text-color: white;
+  --header-bg-color: black;
+  --link-color: white;
+  --link-hover-color: #7cd4fb;
+  --border-color: white;
+  --font-main: "Press Start 2P", cursive;
+  --font-heading: "Press Start 2P", cursive;
+}
+
+body {
+  color: var(--text-color);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: var(--font-main);
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+header {
+  background-color: var(--header-bg-color);
+  border-bottom: 4px solid var(--border-color);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .navbar {
+  display: flex;
+}
+
+header .navbar a {
+  padding: 0 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+nav {
+  background-color: var(--bg-color);
+  border-right: 4px solid white;
+  padding: 8px;
+}
+
+nav a {
+  color: #b3b4dd;
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #7cd4fb;
+}
+
+article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+pre,
+code {
+  background-color: #442c84;
+  padding: 0.5rem;
+  font-family: monospace;
+}
+
+pre {
+  margin: 1rem 0;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 12px;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+  border: 1px solid #605d9f;
+  text-align: left;
+}
+
+table th {
+  font-weight: bold;
+  background-color: #442c84;
+  color: #b3b4dd;
+}
+
+header nav,
+main > aside nav {
+  display: flex;
+  gap: 1rem;
+}
+
+main > aside nav {
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+.content {
+  flex: 3;
+  background-color: var(--bg-color);
+  color: #b3b4dd;
+  margin: 8px;
+  padding: 16px;
+}
+
+a.active {
+  font-weight: bold;
 }

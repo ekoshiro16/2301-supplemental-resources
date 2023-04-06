@@ -1,10 +1,13 @@
+// Dependency imports
 import React, { createElement } from "react";
 import { createRoot } from "react-dom/client";
+// Module imports
+import { Homepage } from "./components";
 
 const App = () => {
   return (
-    <div>
-      <h2>Placeholder</h2>
+    <div className="app">
+      <Homepage />
     </div>
   );
 };
