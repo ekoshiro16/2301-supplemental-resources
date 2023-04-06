@@ -48,6 +48,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 15%;
 }
 
 header .logo {
@@ -73,6 +74,12 @@ nav {
   background-color: var(--bg-color);
   border-right: 4px solid white;
   padding: 8px;
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 0;
+  max-height: 75%;
+  position: relative;
+  z-index: 20;
 }
 
 nav a {
@@ -157,4 +164,29 @@ aside {
 
 a.active {
   font-weight: bold;
+}
+
+#main-aside-cont {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: calc(100% - 8px);
+  display: flex;
+  flex-direction: column;
+}
+
+#main-aside-nav {
+  flex: 0 1 75%;
+  max-height: calc(8 * (1.75em + 8px));
+  overflow-y: auto;
+}
+
+#totoro-gif {
+  flex: 1;
+  max-height: 25%;
+  object-fit: contain;
+  align-self: center;
+  margin-top: 5%;
+  width: 75%;
+  height: 20%;
 }

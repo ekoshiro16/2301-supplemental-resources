@@ -1,27 +1,57 @@
 import React, { useState } from "react";
+// Module imports
+import totoro from "../assets/totoro.gif";
 
 const Homepage = () => {
   const [selectedSection, setSelectedSection] = useState("section1");
 
-  //   const scrollToSection = (sectionId) => {
-  //     const targetSection = document.getElementById(sectionId);
-  //     targetSection?.scrollIntoView({ behavior: "smooth" });
-  //     setSelectedSection(sectionId);
-  //   };
-
   return (
     <>
-      {/* <header>
-        <nav>
-          <a href="#">Logo</a>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </nav>
-      </header> */}
       <main>
-        <aside>
-          <nav>
+        <aside id="main-aside-cont">
+          <nav id="main-aside-nav">
+            <a
+              href="#section1"
+              onClick={() => setSelectedSection("section1")}
+              className={selectedSection === "section1" ? "active" : ""}
+            >
+              Section 1
+            </a>
+            <a
+              href="#section2"
+              onClick={() => setSelectedSection("section2")}
+              className={selectedSection === "section2" ? "active" : ""}
+            >
+              Section 2
+            </a>
+            <a
+              href="#section3"
+              onClick={() => setSelectedSection("section3")}
+              className={selectedSection === "section3" ? "active" : ""}
+            >
+              Section 3
+            </a>
+            <a
+              href="#section1"
+              onClick={() => setSelectedSection("section1")}
+              className={selectedSection === "section1" ? "active" : ""}
+            >
+              Section 1
+            </a>
+            <a
+              href="#section2"
+              onClick={() => setSelectedSection("section2")}
+              className={selectedSection === "section2" ? "active" : ""}
+            >
+              Section 2
+            </a>
+            <a
+              href="#section3"
+              onClick={() => setSelectedSection("section3")}
+              className={selectedSection === "section3" ? "active" : ""}
+            >
+              Section 3
+            </a>
             <a
               href="#section1"
               onClick={() => setSelectedSection("section1")}
@@ -44,20 +74,9 @@ const Homepage = () => {
               Section 3
             </a>
           </nav>
+          <img id="totoro-gif" src={totoro} />
         </aside>
         <div className="content">
-          {/* <section id="section1">
-            <h2>Section 1</h2>
-            <p>Content for section 1.</p>
-          </section>
-          <section id="section2">
-            <h2>Section 2</h2>
-            <p>Content for section 2.</p>
-          </section>
-          <section id="section3">
-            <h2>Section 3</h2>
-            <p>Content for section 3.</p>
-          </section> */}
           {selectedSection === "section1" && (
             <div id="section1" className="content">
               Content for Section 1
