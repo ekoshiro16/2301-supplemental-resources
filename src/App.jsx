@@ -1,14 +1,21 @@
 // Dependency imports
 import React, { createElement } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Module imports
-import { Homepage } from "./components";
+import { Homepage, Navbar } from "./components";
 
 const App = () => {
   return (
-    <div className="app">
-      <Homepage />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
