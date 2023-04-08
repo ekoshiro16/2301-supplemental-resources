@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 // Module imports
 import totoro from "../assets/totoro.gif";
+import sootSprites from "../assets/sootSprites.gif";
+import spiritedAwayPuppy from "../assets/spiritedAwayPuppy.gif";
 
 const Homepage = () => {
   const [selectedSection, setSelectedSection] = useState("section1");
+  const [currentGif, setCurrentGif] = useState(0);
+
+  const gifs = [totoro, sootSprites, spiritedAwayPuppy];
+
+  const handleGifClick = () => {
+    setCurrentGif((prevIdx) => (prevIdx + 1) % gifs.length);
+  };
 
   return (
     <>
@@ -74,7 +83,7 @@ const Homepage = () => {
               Section 3
             </a>
           </nav>
-          <img id="totoro-gif" src={totoro} />
+          <img onClick={handleGifClick} id="cute-gif" src={gifs[currentGif]} />
         </aside>
         <div className="content">
           {selectedSection === "section1" && (
