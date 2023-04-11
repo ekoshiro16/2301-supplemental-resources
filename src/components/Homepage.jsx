@@ -10,6 +10,22 @@ const Homepage = () => {
 
   const gifs = [totoro, sootSprites, spiritedAwayPuppy];
 
+  const sections = [
+    "Big O Notation",
+    "Strings",
+    "Arrays",
+    "Objects",
+    "In Place Algorithms",
+    "Recursion",
+    "Stacks",
+    "Queues",
+    "Linked Lists",
+    "Trees",
+    "Binary Search Trees",
+    "BFS & DFS Operations",
+    "Graphs",
+  ];
+
   const handleGifClick = () => {
     setCurrentGif((prevIdx) => (prevIdx + 1) % gifs.length);
   };
@@ -19,69 +35,16 @@ const Homepage = () => {
       <main>
         <aside id="main-aside-cont">
           <nav id="main-aside-nav">
-            <a
-              href="#section1"
-              onClick={() => setSelectedSection("section1")}
-              className={selectedSection === "section1" ? "active" : ""}
-            >
-              Section 1
-            </a>
-            <a
-              href="#section2"
-              onClick={() => setSelectedSection("section2")}
-              className={selectedSection === "section2" ? "active" : ""}
-            >
-              Section 2
-            </a>
-            <a
-              href="#section3"
-              onClick={() => setSelectedSection("section3")}
-              className={selectedSection === "section3" ? "active" : ""}
-            >
-              Section 3
-            </a>
-            <a
-              href="#section1"
-              onClick={() => setSelectedSection("section1")}
-              className={selectedSection === "section1" ? "active" : ""}
-            >
-              Section 1
-            </a>
-            <a
-              href="#section2"
-              onClick={() => setSelectedSection("section2")}
-              className={selectedSection === "section2" ? "active" : ""}
-            >
-              Section 2
-            </a>
-            <a
-              href="#section3"
-              onClick={() => setSelectedSection("section3")}
-              className={selectedSection === "section3" ? "active" : ""}
-            >
-              Section 3
-            </a>
-            <a
-              href="#section1"
-              onClick={() => setSelectedSection("section1")}
-              className={selectedSection === "section1" ? "active" : ""}
-            >
-              Section 1
-            </a>
-            <a
-              href="#section2"
-              onClick={() => setSelectedSection("section2")}
-              className={selectedSection === "section2" ? "active" : ""}
-            >
-              Section 2
-            </a>
-            <a
-              href="#section3"
-              onClick={() => setSelectedSection("section3")}
-              className={selectedSection === "section3" ? "active" : ""}
-            >
-              Section 3
-            </a>
+            {sections.map((section, index) => (
+              <a
+                key={index}
+                href={`#${section}`}
+                onClick={() => setSelectedSection(section)}
+                className={selectedSection === section ? "active" : ""}
+              >
+                {section}
+              </a>
+            ))}
           </nav>
           <img onClick={handleGifClick} id="cute-gif" src={gifs[currentGif]} />
         </aside>
