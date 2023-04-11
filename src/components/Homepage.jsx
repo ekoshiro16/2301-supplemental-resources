@@ -1,5 +1,6 @@
 // Dependency imports
 import React, { useState } from "react";
+import { render } from "react-dom";
 // Module imports
 import { AsideNav, BigONotation } from "./index";
 
@@ -22,6 +23,15 @@ const Homepage = () => {
     "Graphs",
   ];
 
+  const renderSelectedContent = (value) => {
+    switch (value) {
+      case "Big O Notation":
+        return <BigONotation />;
+      default:
+        return <div>No content selected.</div>;
+    }
+  };
+
   return (
     <>
       <main>
@@ -30,24 +40,7 @@ const Homepage = () => {
           selectedSection={selectedSection}
           setSelectedSection={setSelectedSection}
         />
-        <div className="content">
-          {/* {selectedSection === "section1" && (
-            <div id="section1" className="content">
-              Content for Section 1
-            </div>
-          )}
-          {selectedSection === "section2" && (
-            <div id="section2" className="content">
-              Content for Section 2
-            </div>
-          )}
-          {selectedSection === "section3" && (
-            <div id="section3" className="content">
-              Content for Section 3
-            </div>
-          )} */}
-          <BigONotation />
-        </div>
+        <div className="content">{renderSelectedContent(selectedSection)}</div>
       </main>
     </>
   );
