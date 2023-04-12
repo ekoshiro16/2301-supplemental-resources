@@ -1,12 +1,13 @@
 // Dependency imports
-import React, { useState } from "react";
-import { render } from "react-dom";
+import { useEffect, useRef, useState } from "react";
 // Module imports
 import { AsideNav, BigONotation, BigONotationTwo } from "./index";
 
 const Homepage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedSection, setSelectedSection] = useState("section1");
+
+  const contentRef = useRef(null);
 
   const sections = [
     "Big O Notation",
@@ -37,6 +38,11 @@ const Homepage = () => {
     },
   ];
 
+  // Hooks
+  useEffect(() => {
+    scrollBackToTop();
+  }, [currentPage]);
+
   const renderSelectedContent = (value) => {
     const filteredContent = sectionContent.find(
       (content) => content.section === value && content.page === currentPage
@@ -55,7 +61,10 @@ const Homepage = () => {
         content.section === selectedSection && content.page === currentPage + 1
     );
 
-    if (nextPageContent) setCurrentPage((prevPage) => prevPage + 1);
+    if (nextPageContent) {
+      setCurrentPage((prevPage) => prevPage + 1);
+      scrollBackToTop();
+    }
   };
 
   const handlePreviousPage = () => {
@@ -66,6 +75,7 @@ const Homepage = () => {
 
     if (prevPageContent) {
       setCurrentPage((prevPage) => prevPage - 1);
+      scrollBackToTop();
     }
   };
 
@@ -78,6 +88,13 @@ const Homepage = () => {
     (content) =>
       content.section === selectedSection && content.page === currentPage - 1
   );
+
+  const scrollBackToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+  };
 
   return (
     <>
