@@ -50,14 +50,34 @@ const Homepage = () => {
   };
 
   const handleNextPage = () => {
-    setCurrentPage((prevPage) => prevPage + 1);
+    const nextPageContent = sectionContent.find(
+      (content) =>
+        content.section === selectedSection && content.page === currentPage + 1
+    );
+
+    if (nextPageContent) setCurrentPage((prevPage) => prevPage + 1);
   };
 
   const handlePreviousPage = () => {
-    if (currentPage > 1) {
+    const prevPageContent = sectionContent.find(
+      (content) =>
+        content.section === selectedSection && content.page === currentPage - 1
+    );
+
+    if (prevPageContent) {
       setCurrentPage((prevPage) => prevPage - 1);
     }
   };
+
+  const hasNextContent = sectionContent.some(
+    (content) =>
+      content.section === selectedSection && content.page === currentPage + 1
+  );
+
+  const hasPreviousContent = sectionContent.some(
+    (content) =>
+      content.section === selectedSection && content.page === currentPage - 1
+  );
 
   return (
     <>
@@ -71,10 +91,15 @@ const Homepage = () => {
           {renderSelectedContent(selectedSection)}
           {selectedSection === "Big O Notation" && (
             <>
-              <button onClick={handlePreviousPage} disabled={currentPage === 1}>
+              <button
+                onClick={handlePreviousPage}
+                disabled={!hasPreviousContent}
+              >
                 Previous
               </button>
-              <button onClick={handleNextPage}>Next</button>
+              <button onClick={handleNextPage} disabled={!hasNextContent}>
+                Next
+              </button>
             </>
           )}
         </div>
