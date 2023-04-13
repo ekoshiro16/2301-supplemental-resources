@@ -4,7 +4,9 @@ const BigONotationFour = (props) => {
       <h2>Additional Resources:</h2>
       <ul>
         <li>
-          <a href="https://www.bigocheatsheet.com/">Big O Cheatsheet</a>
+          <a target="_blank" href="https://www.bigocheatsheet.com/">
+            Big O Cheatsheet
+          </a>
           <ul>
             <li>
               This website provides a comprehensive list of the time
@@ -14,7 +16,10 @@ const BigONotationFour = (props) => {
           </ul>
         </li>
         <li>
-          <a href="https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/">
+          <a
+            target="_blank"
+            href="https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/"
+          >
             Big O Examples
           </a>
           <ul>
@@ -25,7 +30,7 @@ const BigONotationFour = (props) => {
           </ul>
         </li>
         <li>
-          <a href="https://www.youtube.com/watch?v=v4cd1O4zkGw">
+          <a target="_blank" href="https://www.youtube.com/watch?v=v4cd1O4zkGw">
             Gayle Laaakman McDowell's Video on Big O Notation
           </a>
           <ul>
