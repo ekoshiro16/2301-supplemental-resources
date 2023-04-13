@@ -84,6 +84,7 @@ const Homepage = () => {
           key={`pagination-btn-${i}`}
           onClick={() => handlePageJump(i)}
           disabled={currentPage === i}
+          className={currentPage === i ? "active" : ""}
         >
           {i}
         </button>
@@ -158,7 +159,10 @@ const Homepage = () => {
                 &#8592;
               </button>
 
-              <div>{renderPaginationButtons()}</div>
+              <div className="ellipsis-pagination-cont">...</div>
+              <div className="pagination-buttons-cont">
+                {renderPaginationButtons()}
+              </div>
 
               <button
                 className="prev-next-bttn"
