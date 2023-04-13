@@ -10,7 +10,7 @@ const BigONotationTwo = (props) => {
           given algorithm takes to run!{" "}
         </p>
         <h4>Points to Remember:</h4>
-        <ul>
+        <ul className="content-list">
           <li>
             Go line by line, asking yourself: "How many times does this line of
             code run relative to the size of the input?"

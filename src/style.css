@@ -139,6 +139,10 @@ table th {
   color: #b3b4dd;
 }
 
+ul li {
+  margin-bottom: 12px;
+}
+
 header nav,
 main > aside nav {
   display: flex;
