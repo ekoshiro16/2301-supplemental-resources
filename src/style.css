@@ -214,7 +214,7 @@ a.active {
 
 .double-bttn-cont {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: relative;
 }
 
