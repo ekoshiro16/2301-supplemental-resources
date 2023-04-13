@@ -7,14 +7,10 @@ import {
   BigONotationTwo,
   BigONotationThree,
   BigONotationFour,
+  Strings,
 } from "./index";
 
 const Homepage = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [selectedSection, setSelectedSection] = useState("section1");
-
-  const contentRef = useRef(null);
-
   const sections = [
     "Big O Notation",
     "Strings",
@@ -52,7 +48,17 @@ const Homepage = () => {
       content: <BigONotationFour />,
       page: 4,
     },
+    {
+      section: "Strings",
+      content: <Strings />,
+      page: 1,
+    },
   ];
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedSection, setSelectedSection] = useState(sections[0]);
+
+  const contentRef = useRef(null);
 
   // Hooks
   useEffect(() => {
@@ -149,7 +155,7 @@ const Homepage = () => {
         />
         <div className="content">
           {renderSelectedContent(selectedSection)}
-          {selectedSection === "Big O Notation" && (
+          {selectedSection && (
             <div className="double-bttn-cont">
               <button
                 className="prev-next-bttn"

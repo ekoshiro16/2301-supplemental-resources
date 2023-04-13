@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <Link to="/">2301 javascript resources</Link>
+        <Link to="/">2301 JavaScript Resources</Link>
       </nav>
     </header>
   );
