@@ -6,3 +6,4 @@ export { default as Navbar } from "./Navbar";
 export { default as BigONotation } from "./content/BigONotation";
 export { default as BigONotationTwo } from "./content/BigONotationTwo";
 export { default as BigONotationThree } from "./content/BigONotationThree";
+export { default as BigONotationFour } from "./content/BigONotationFour";

@@ -66,7 +66,7 @@ const BigONotationThree = (props) => {
             key-value pairs, or properties, stored in the object.
           </li>
           <p>
-            Caveats: Empty strings, arrays, or objects only occupy O(1) space
+            Caveat: Empty strings, arrays, or objects only occupy O(1) space
             complexity. Only as the number of contain characters, elements, or
             properties increase does the space complexity become O(<em>n</em>).
           </p>

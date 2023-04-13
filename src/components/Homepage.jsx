@@ -6,6 +6,7 @@ import {
   BigONotation,
   BigONotationTwo,
   BigONotationThree,
+  BigONotationFour,
 } from "./index";
 
 const Homepage = () => {
@@ -45,6 +46,11 @@ const Homepage = () => {
       section: "Big O Notation",
       content: <BigONotationThree />,
       page: 3,
+    },
+    {
+      section: "Big O Notation",
+      content: <BigONotationFour />,
+      page: 4,
     },
   ];
 
