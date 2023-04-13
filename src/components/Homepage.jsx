@@ -71,6 +71,28 @@ const Homepage = () => {
     }
   };
 
+  const renderPaginationButtons = () => {
+    const pageCount = sectionContent.filter(
+      (content) => content.section === selectedSection
+    ).length;
+
+    const buttons = [];
+
+    for (let i = 1; i <= pageCount; i++) {
+      buttons.push(
+        <button
+          key={`pagination-btn-${i}`}
+          onClick={() => handlePageJump(i)}
+          disabled={currentPage === i}
+        >
+          {i}
+        </button>
+      );
+    }
+
+    return buttons;
+  };
+
   const handleNextPage = () => {
     const nextPageContent = sectionContent.find(
       (content) =>
@@ -105,6 +127,10 @@ const Homepage = () => {
       content.section === selectedSection && content.page === currentPage - 1
   );
 
+  const handlePageJump = (page) => {
+    setCurrentPage(page);
+  };
+
   const scrollBackToTop = () => {
     window.scrollTo({
       top: 0,
@@ -131,6 +157,9 @@ const Homepage = () => {
               >
                 &#8592;
               </button>
+
+              <div>{renderPaginationButtons()}</div>
+
               <button
                 className="prev-next-bttn"
                 onClick={handleNextPage}
