@@ -213,6 +213,13 @@ a.active {
   border: 2px solid white;
 }
 
+.prev-next-bttn:disabled {
+  background-color: black;
+  border-color: black;
+  color: #a9a9a9;
+  cursor: auto;
+}
+
 .prev-next-bttn:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
