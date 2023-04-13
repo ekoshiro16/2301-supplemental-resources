@@ -24,9 +24,12 @@ const BigONotation = (props) => {
           The first solution consumes quadratic time complexity, but constant
           space (or O(n^2) time vs O(1) space), whereas the second solution
           consumes both linear time and space complexity (or O(n) time and
-          space). The developer, if their goal is to make as lightweight of an
-          app as possible (with regards to memory consumption) but does not care
-          as much about runtime, may decide to use the first option. But if they
+          space).
+        </p>
+        <p>
+          The developer, if their goal is to make as lightweight of an app as
+          possible (with regards to memory consumption) but does not care as
+          much about runtime, may decide to use the first option. But if they
           want a more balanced application, they may decide on the second
           algorithm. As you can see, the usage of Big O Notation allows us to
           make informed decisions like this in whatever context we are put into

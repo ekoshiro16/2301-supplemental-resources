@@ -1,7 +1,12 @@
 // Dependency imports
 import { useEffect, useRef, useState } from "react";
 // Module imports
-import { AsideNav, BigONotation, BigONotationTwo } from "./index";
+import {
+  AsideNav,
+  BigONotation,
+  BigONotationTwo,
+  BigONotationThree,
+} from "./index";
 
 const Homepage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,6 +40,11 @@ const Homepage = () => {
       section: "Big O Notation",
       content: <BigONotationTwo />,
       page: 2,
+    },
+    {
+      section: "Big O Notation",
+      content: <BigONotationThree />,
+      page: 3,
     },
   ];
 
