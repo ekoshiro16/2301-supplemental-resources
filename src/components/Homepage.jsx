@@ -107,17 +107,22 @@ const Homepage = () => {
         <div className="content">
           {renderSelectedContent(selectedSection)}
           {selectedSection === "Big O Notation" && (
-            <>
+            <div className="double-bttn-cont">
               <button
+                className="prev-next-bttn"
                 onClick={handlePreviousPage}
                 disabled={!hasPreviousContent}
               >
-                Previous
+                &#8592;
               </button>
-              <button onClick={handleNextPage} disabled={!hasNextContent}>
-                Next
+              <button
+                className="prev-next-bttn"
+                onClick={handleNextPage}
+                disabled={!hasNextContent}
+              >
+                &#8594;
               </button>
-            </>
+            </div>
           )}
         </div>
       </main>
