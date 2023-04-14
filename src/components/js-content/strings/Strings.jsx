@@ -2,9 +2,7 @@ const Strings = (props) => {
   return (
     <div className="content">
       <h2>Strings</h2>
-      <h3>
-        Top 15 Most Important String Methods to Know for Technical Interviews
-      </h3>
+      <h3>Most Important String Methods to Know for Technical Interviews</h3>
       <ul>
         <li>
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt">

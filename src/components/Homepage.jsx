@@ -2,6 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 // Module imports
 import {
+  Arrays,
+  ArraysTwo,
   AsideNav,
   BigONotation,
   BigONotationTwo,
@@ -61,6 +63,16 @@ const Homepage = () => {
       section: "Strings",
       content: <Strings />,
       page: 1,
+    },
+    {
+      section: "Arrays",
+      content: <Arrays />,
+      page: 1,
+    },
+    {
+      section: "Arrays",
+      content: <ArraysTwo />,
+      page: 2,
     },
   ];
 
