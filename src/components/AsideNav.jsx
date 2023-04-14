@@ -7,7 +7,8 @@ import sootSprites from "../assets/sootSprites.gif";
 import spiritedAwayPuppy from "../assets/spiritedAwayPuppy.gif";
 
 const AsideNav = (props) => {
-  const { sections, selectedSection, setSelectedSection } = props;
+  const { sections, selectedSection, setCurrentPage, setSelectedSection } =
+    props;
   const [currentGif, setCurrentGif] = useState(0);
 
   const gifs = [totoro, sootSprites, spiritedAwayPuppy];
@@ -23,7 +24,10 @@ const AsideNav = (props) => {
           <a
             key={index}
             href={`#${section}`}
-            onClick={() => setSelectedSection(section)}
+            onClick={() => {
+              setSelectedSection(section);
+              setCurrentPage(1);
+            }}
             className={selectedSection === section ? "active" : ""}
           >
             {section}

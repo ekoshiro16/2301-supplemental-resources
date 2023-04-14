@@ -7,6 +7,7 @@ import {
   BigONotationTwo,
   BigONotationThree,
   BigONotationFour,
+  Navbar,
   Strings,
 } from "./index";
 
@@ -21,10 +22,10 @@ const Homepage = () => {
     "Stacks",
     "Queues",
     "Linked Lists",
-    "Trees",
-    "Binary Search Trees",
-    "BFS & DFS Operations",
-    "Graphs",
+    // "Trees",
+    // "Binary Search Trees",
+    // "BFS & DFS Operations",
+    // "Graphs",
   ];
 
   const sectionContent = [
@@ -55,8 +56,8 @@ const Homepage = () => {
     },
   ];
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const [selectedSection, setSelectedSection] = useState(sections[0]);
+  const [currentPage, setCurrentPage] = useState(undefined);
+  const [selectedSection, setSelectedSection] = useState(undefined);
 
   const contentRef = useRef(null);
 
@@ -70,10 +71,29 @@ const Homepage = () => {
       (content) => content.section === value && content.page === currentPage
     );
 
-    if (filteredContent) {
+    if (filteredContent && filteredContent?.content) {
       return filteredContent.content;
+    } else if (selectedSection && !filteredContent) {
+      return <div>🚧 Under construction! 🚧</div>;
     } else {
-      return <div>No content selected.</div>;
+      return (
+        <div>
+          <h2>welcome!</h2>
+          <p>
+            {" "}
+            hey everybody. here you can find a bunch of my recommended coding
+            resources, both stuff i've written myself or stuff i've found
+            online.
+          </p>
+          <p>
+            if you notice any mistakes or typos or anything like that, just
+            shoot me a message on my alumni coding discord and let me know, and
+            i'll find a time to fix it up. hope you all find this site helpful
+            otherwise!
+          </p>
+          <p>peace ✌️ -elle</p>
+        </div>
+      );
     }
   };
 
@@ -147,11 +167,16 @@ const Homepage = () => {
 
   return (
     <>
+      <Navbar
+        setCurrentPage={setCurrentPage}
+        setSelectedSection={setSelectedSection}
+      />
       <main>
         <AsideNav
           sections={sections}
           selectedSection={selectedSection}
           setSelectedSection={setSelectedSection}
+          setCurrentPage={setCurrentPage}
         />
         <div className="content">
           {renderSelectedContent(selectedSection)}
