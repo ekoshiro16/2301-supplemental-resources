@@ -12,7 +12,7 @@ import {
 } from "./index";
 
 const Homepage = () => {
-  const sections = [
+  const jsSections = [
     "Big O Notation",
     "Strings",
     "Arrays",
@@ -22,10 +22,18 @@ const Homepage = () => {
     "Stacks",
     "Queues",
     "Linked Lists",
-    // "Trees",
-    // "Binary Search Trees",
-    // "BFS & DFS Operations",
-    // "Graphs",
+  ];
+
+  const reactSections = [
+    "JSX",
+    "Functional Components",
+    "Props",
+    "State",
+    "Hooks",
+    "useState",
+    "useEffect",
+    "Conditional Rendering",
+    "Lists & Keys",
   ];
 
   const sectionContent = [
@@ -57,6 +65,7 @@ const Homepage = () => {
   ];
 
   const [currentPage, setCurrentPage] = useState(undefined);
+  const [selectedCategory, setSelectedCategory] = useState("JavaScript");
   const [selectedSection, setSelectedSection] = useState(undefined);
 
   const contentRef = useRef(null);
@@ -168,15 +177,20 @@ const Homepage = () => {
   return (
     <>
       <Navbar
+        jsSections={jsSections}
+        reactSections={reactSections}
         setCurrentPage={setCurrentPage}
         setSelectedSection={setSelectedSection}
+        setSelectedCategory={setSelectedCategory}
       />
       <main>
         <AsideNav
-          sections={sections}
+          jsSections={jsSections}
+          reactSections={reactSections}
           selectedSection={selectedSection}
           setSelectedSection={setSelectedSection}
           setCurrentPage={setCurrentPage}
+          selectedCategory={selectedCategory}
         />
         <div className="content">
           {renderSelectedContent(selectedSection)}

@@ -1,17 +1,46 @@
 import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
-  const handleClick = (e) => {
+  const {
+    jsSections,
+    reactSections,
+    setCurrentPage,
+    setSelectedCategory,
+    setSelectedSection,
+  } = props;
+
+  const handleJsClick = (e) => {
     e.preventDefault();
-    props.setSelectedSection(undefined);
-    props.setCurrentPage(undefined);
+    setSelectedSection(jsSections[0]);
+    setCurrentPage(1);
+    setSelectedCategory("JavaScript");
+  };
+
+  const handleReactClick = (e) => {
+    e.preventDefault();
+    setSelectedSection(reactSections[0]);
+    setCurrentPage(1);
+    setSelectedCategory("React");
+  };
+
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    setSelectedSection(undefined);
+    setCurrentPage(undefined);
+    setSelectedCategory("JavaScript");
   };
 
   return (
     <header>
       <nav>
-        <Link onClick={handleClick} to="/">
-          2301 JavaScript Resources
+        <Link to="/" onClick={handleHomeClick}>
+          2301
+        </Link>
+        <Link onClick={handleJsClick} to="/">
+          JavaScript Resources
+        </Link>
+        <Link onClick={handleReactClick} to="/">
+          React Resources
         </Link>
       </nav>
     </header>
