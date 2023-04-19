@@ -11,6 +11,7 @@ import {
   BigONotationFour,
   Navbar,
   Strings,
+  StringsTwo,
 } from "./index";
 
 const Homepage = () => {
@@ -65,6 +66,11 @@ const Homepage = () => {
       page: 1,
     },
     {
+      section: "Strings",
+      content: <StringsTwo />,
+      page: 2,
+    },
+    {
       section: "Arrays",
       content: <Arrays />,
       page: 1,
@@ -107,9 +113,9 @@ const Homepage = () => {
             online.
           </p>
           <p>
-            if you notice any mistakes or typos or anything like that, just
-            shoot me a message on my alumni coding discord and let me know, and
-            i'll find a time to fix it up. hope you all find this site helpful
+            if you notice any mistakes or typos or anything like that, just send
+            me a message on my alumni coding discord and let me know, and i'll
+            find a time to fix it up. hope you all find this site helpful
             otherwise!
           </p>
           <p>peace ✌️ -elle</p>
