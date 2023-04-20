@@ -33,37 +33,32 @@ const ArraysTwo = (props) => {
   const handleExecuteClick = () => {
     if (editorRef.current) {
       const code = editorRef.current.editor.getValue();
-
-      // Add a function wrapper around the user's code
       const wrappedCode = `return (function() {${code}})();`;
-
-      // Store the original console.log function
       const originalConsoleLog = console.log;
-
-      // Create an array to store logged messages
       const logMessages = [];
 
-      // Override the console.log function
       console.log = (...args) => {
         logMessages.push(args.join(" "));
         originalConsoleLog.apply(console, args);
       };
 
       try {
-        // Create a new function from the user's code and execute it
         const func = new Function(wrappedCode);
         const result = func();
-        console.log(result);
 
-        // Set the output to the collected log messages
-        setOutput(logMessages.join("\n"));
+        if (result !== undefined) {
+          console.log(result);
+        }
 
-        console.log("Made it to end of handleExecuteClick");
+        if (logMessages.length > 0) {
+          setOutput(logMessages.join("\n"));
+        } else {
+          setOutput("Nothing logged or executed");
+        }
       } catch (error) {
         console.error("Error executing code:", error);
         setOutput(`Error: ${error.message}`);
       } finally {
-        // Restore the original console.log function
         console.log = originalConsoleLog;
       }
     }
