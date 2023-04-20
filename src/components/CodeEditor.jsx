@@ -54,7 +54,6 @@ const CodeEditor = (props) => {
 
   return (
     <div>
-      <h2>Practice Problem</h2>
       <div className="practice-cont">
         <div className="editor-cont">
           <AceEditor
@@ -64,7 +63,7 @@ const CodeEditor = (props) => {
             name="editor"
             editorProps={{ $blockScrolling: true }}
             value={editorContent}
-            fontSize={12}
+            fontSize={13}
             showPrintMargin={false}
             showGutter={true}
             wrapEnabled={true}

@@ -360,6 +360,7 @@ a.active {
 .execute-bttn:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .execute-bttn:active {

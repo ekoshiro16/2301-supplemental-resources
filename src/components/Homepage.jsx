@@ -12,6 +12,7 @@ import {
   Navbar,
   Objects,
   ObjectsTwo,
+  ObjectsThree,
   Strings,
   StringsTwo,
 } from "./index";
@@ -91,6 +92,11 @@ const Homepage = () => {
       section: "Objects",
       content: <ObjectsTwo />,
       page: 2,
+    },
+    {
+      section: "Objects",
+      content: <ObjectsThree />,
+      page: 3,
     },
   ];
 
