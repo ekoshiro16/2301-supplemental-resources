@@ -10,6 +10,8 @@ import {
   BigONotationThree,
   BigONotationFour,
   Navbar,
+  Objects,
+  ObjectsTwo,
   Strings,
   StringsTwo,
 } from "./index";
@@ -78,6 +80,16 @@ const Homepage = () => {
     {
       section: "Arrays",
       content: <ArraysTwo />,
+      page: 2,
+    },
+    {
+      section: "Objects",
+      content: <Objects />,
+      page: 1,
+    },
+    {
+      section: "Objects",
+      content: <ObjectsTwo />,
       page: 2,
     },
   ];

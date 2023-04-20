@@ -10,5 +10,7 @@ export { default as BigONotation } from "./js-content/big-o/BigONotation";
 export { default as BigONotationTwo } from "./js-content/big-o/BigONotationTwo";
 export { default as BigONotationThree } from "./js-content/big-o/BigONotationThree";
 export { default as BigONotationFour } from "./js-content/big-o/BigONotationFour";
+export { default as Objects } from "./js-content/objects/Objects";
+export { default as ObjectsTwo } from "./js-content/objects/ObjectsTwo";
 export { default as Strings } from "./js-content/strings/Strings";
 export { default as StringsTwo } from "./js-content/strings/StringsTwo";
