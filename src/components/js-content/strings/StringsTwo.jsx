@@ -89,14 +89,16 @@ const StringsTwo = (props) => {
               tabSize: 2,
             }}
             width="80%"
-            height="310px"
+            height="450px"
             ref={editorRef}
           />
           <div className="output-cont">
             <pre>{output}</pre>
           </div>
         </div>
-        <button onClick={handleExecuteClick}>Execute</button>
+        <button className="execute-bttn" onClick={handleExecuteClick}>
+          Execute
+        </button>
       </div>
     </div>
   );
