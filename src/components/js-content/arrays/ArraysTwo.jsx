@@ -16,7 +16,12 @@ const ArraysTwo = (props) => {
   */
   `;
 
-  return <CodeEditor defaultCode={defaultCode} />;
+  return (
+    <div className="content">
+      <h2>Array Practice Problem</h2>
+      <CodeEditor defaultCode={defaultCode} />
+    </div>
+  );
 };
 
 export default ArraysTwo;

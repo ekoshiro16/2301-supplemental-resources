@@ -11,7 +11,12 @@ const StringsTwo = (props) => {
   */
   `;
 
-  return <CodeEditor defaultCode={defaultCode} />;
+  return (
+    <div className="content">
+      <h2>String Practice Problem</h2>
+      <CodeEditor defaultCode={defaultCode} />
+    </div>
+  );
 };
 
 export default StringsTwo;

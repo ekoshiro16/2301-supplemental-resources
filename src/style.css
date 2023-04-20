@@ -372,3 +372,22 @@ a.active {
   width: 17.5%;
   font-size: 0.75rem;
 }
+
+#main-navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#main-navbar-content {
+  width: 38%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+
+#site-navbar-section {
+  margin-left: 2%;
+}
