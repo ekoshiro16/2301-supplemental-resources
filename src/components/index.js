@@ -13,5 +13,6 @@ export { default as BigONotationFour } from "./js-content/big-o/BigONotationFour
 export { default as Objects } from "./js-content/objects/Objects";
 export { default as ObjectsTwo } from "./js-content/objects/ObjectsTwo";
 export { default as ObjectsThree } from "./js-content/objects/ObjectsThree";
+export { default as ObjectsFour } from "./js-content/objects/ObjectsFour";
 export { default as Strings } from "./js-content/strings/Strings";
 export { default as StringsTwo } from "./js-content/strings/StringsTwo";

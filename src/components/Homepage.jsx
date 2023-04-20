@@ -15,6 +15,7 @@ import {
   ObjectsThree,
   Strings,
   StringsTwo,
+  ObjectsFour,
 } from "./index";
 
 const Homepage = () => {
@@ -97,6 +98,11 @@ const Homepage = () => {
       section: "Objects",
       content: <ObjectsThree />,
       page: 3,
+    },
+    {
+      section: "Objects",
+      content: <ObjectsFour />,
+      page: 4,
     },
   ];
 
