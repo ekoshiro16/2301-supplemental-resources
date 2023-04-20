@@ -338,3 +338,12 @@ a.active {
   color: black;
   border-color: black;
 }
+
+.editor-cont {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.output-cont {
+  width: 20%;
+}
