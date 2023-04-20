@@ -77,7 +77,7 @@ const StringsTwo = (props) => {
             editorProps={{ $blockScrolling: true }}
             value={editorContent}
             fontSize={12}
-            showPrintMargin={true}
+            showPrintMargin={false}
             showGutter={true}
             wrapEnabled={true}
             highlightActiveLine={true}

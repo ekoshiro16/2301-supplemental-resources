@@ -353,8 +353,8 @@ a.active {
 .execute-bttn {
   margin-left: 0.75rem;
   background-color: black;
-  border: 1px solid #e6e6fa;
-  color: #e6e6fa;
+  border: 1px solid #b3b4dd;
+  color: #b3b4dd;
 }
 
 .execute-bttn:hover {
