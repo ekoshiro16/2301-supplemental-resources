@@ -14,6 +14,7 @@ import {
   Objects,
   ObjectsTwo,
   ObjectsThree,
+  Recursion,
   Strings,
   StringsTwo,
   ObjectsFour,
@@ -108,6 +109,11 @@ const Homepage = () => {
     {
       section: "In Place Algorithms",
       content: <InPlaceAlgos />,
+      page: 1,
+    },
+    {
+      section: "Recursion",
+      content: <Recursion />,
       page: 1,
     },
   ];
