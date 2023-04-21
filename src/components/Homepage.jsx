@@ -9,6 +9,7 @@ import {
   BigONotationTwo,
   BigONotationThree,
   BigONotationFour,
+  InPlaceAlgos,
   Navbar,
   Objects,
   ObjectsTwo,
@@ -103,6 +104,11 @@ const Homepage = () => {
       section: "Objects",
       content: <ObjectsFour />,
       page: 4,
+    },
+    {
+      section: "In Place Algorithms",
+      content: <InPlaceAlgos />,
+      page: 1,
     },
   ];
 

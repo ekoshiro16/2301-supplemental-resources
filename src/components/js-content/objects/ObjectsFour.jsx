@@ -19,7 +19,7 @@ const sampleObjVals = Object.values(sampleObj) // will return [1, 2, 3];
 console.log(sampleObjVals); 
 
 /*
-At this point, you can just iterate through the returned arrays using a basic for or while loop, depending on whether you need the object's keys, values, or both
+At this point, you can just iterate through the above arrays using a basic for or while loop.
 */
 `;
 
