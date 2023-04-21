@@ -22,10 +22,10 @@ import {
 const Homepage = () => {
   const jsSections = [
     "Big O Notation",
+    "In Place Algorithms",
     "Strings",
     "Arrays",
     "Objects",
-    "In Place Algorithms",
     "Recursion",
     "Stacks",
     "Queues",
