@@ -18,8 +18,8 @@ const InPlaceAlgos = (props) => {
           some mental strategies that she could use, instead of needing to do
           something inconvenient like getting a piece of paper to write down
           notes as you go along. Eventually, both my sister and I were able to
-          do it entirely by memory (although I admit it did take us a while to
-          learn).
+          solve a cube entirely by memory (although I admit it did take us a
+          while to learn).
         </p>
 
         <p>
