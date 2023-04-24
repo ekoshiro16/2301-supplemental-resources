@@ -21,13 +21,13 @@
     "react-ga": "^3.3.1",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.1.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "vite": "^3.1.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.7.1",
-    "vite": "^3.1.4"
+    "prettier": "^2.7.1"
   }
 }
