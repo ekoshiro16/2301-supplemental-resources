@@ -1,4 +1,4 @@
-import bigOGraph from "../../../assets/bigOGraph.png";
+import bigOGraph from "/assets/bigOGraph.png";
 
 const BigONotationFour = (props) => {
   return (
