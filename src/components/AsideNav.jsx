@@ -2,9 +2,9 @@
 import { useState } from "react";
 
 // Module imports
-import totoro from "../assets/totoro.gif";
-import sootSprites from "../assets/sootSprites.gif";
-import spiritedAwayPuppy from "../assets/spiritedAwayPuppy.gif";
+import totoro from "../totoro.gif";
+import sootSprites from "../sootSprites.gif";
+import spiritedAwayPuppy from "../spiritedAwayPuppy.gif";
 
 const AsideNav = (props) => {
   const {

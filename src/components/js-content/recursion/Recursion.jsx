@@ -1,5 +1,5 @@
 // Module imports
-import leoMeme from "../../../assets/leoMeme.jpeg";
+import leoMeme from "../../../leoMeme.jpeg";
 
 const Recursion = (props) => {
   return (

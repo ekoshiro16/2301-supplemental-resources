@@ -1,4 +1,4 @@
-// import bigOGraph from "/assets/bigOGraph.png";
+import bigOGraph from "../../../bigOGraph.png";
 
 const BigONotationFour = (props) => {
   return (
@@ -46,7 +46,7 @@ const BigONotationFour = (props) => {
       </ul>
       <h4>Big O Runtime Analysis:</h4>
       <div id="big-o-graph-img-cont">
-        <img id="big-o-graph-img" src="/assets/bigOGraph.png" />
+        <img id="big-o-graph-img" src={bigOGraph} />
       </div>
     </div>
   );
