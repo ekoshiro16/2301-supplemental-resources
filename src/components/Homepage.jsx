@@ -16,6 +16,7 @@ import {
   ObjectsThree,
   Recursion,
   RecursionTwo,
+  RecursionThree,
   Strings,
   StringsTwo,
   ObjectsFour,
@@ -121,6 +122,11 @@ const Homepage = () => {
       section: "Recursion",
       content: <RecursionTwo />,
       page: 2,
+    },
+    {
+      section: "Recursion",
+      content: <RecursionThree />,
+      page: 3,
     },
   ];
 
