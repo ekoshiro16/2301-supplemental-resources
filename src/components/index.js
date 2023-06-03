@@ -19,5 +19,6 @@ export { default as Recursion } from "./js-content/recursion/Recursion";
 export { default as RecursionTwo } from "./js-content/recursion/RecursionTwo";
 export { default as RecursionThree } from "./js-content/recursion/RecursionThree";
 export { default as RecursionFour } from "./js-content/recursion/RecursionFour";
+export { default as RecursionFive } from "./js-content/recursion/RecursionFive";
 export { default as Strings } from "./js-content/strings/Strings";
 export { default as StringsTwo } from "./js-content/strings/StringsTwo";
