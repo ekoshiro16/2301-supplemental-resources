@@ -8,7 +8,8 @@ const RecursionThree = (props) => {
     FYI, for this problem, you can assume 2 things:
     1. The Fib sequence starts with 0 (at index 0)
     2. The 2nd value in the Fib sequence is 1 (at index 1). 
-    */`;
+*/
+   `;
 
   return (
     <div className="content">
