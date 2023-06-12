@@ -25,3 +25,4 @@ export { default as StringsTwo } from "./js-content/strings/StringsTwo";
 
 // React Content Sections
 export { default as Components } from "./react-content/components/Components";
+export { default as ComponentsTwo } from "./react-content/components/ComponentsTwo";
