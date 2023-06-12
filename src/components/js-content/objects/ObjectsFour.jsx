@@ -27,6 +27,23 @@ At this point, you can just iterate through the above arrays using a basic for o
     <div className="content">
       <h2>Iterating through Objects Pt. II</h2>
       <CodeEditor defaultCode={defaultCode} />
+
+      <aside>
+        <p>Appendix: </p>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys">
+            {" "}
+            Object.keys() docs
+          </a>
+        </li>
+
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values">
+            {" "}
+            Object.values() docs
+          </a>
+        </li>
+      </aside>
     </div>
   );
 };

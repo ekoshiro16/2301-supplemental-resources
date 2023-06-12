@@ -3,7 +3,7 @@ export { default as CodeEditor } from "./CodeEditor";
 export { default as Homepage } from "./Homepage";
 export { default as Navbar } from "./Navbar";
 
-// Content Sections
+// JS Content Sections
 export { default as Arrays } from "./js-content/arrays/Arrays";
 export { default as ArraysTwo } from "./js-content/arrays/ArraysTwo";
 export { default as BigONotation } from "./js-content/big-o/BigONotation";
@@ -22,3 +22,6 @@ export { default as RecursionFour } from "./js-content/recursion/RecursionFour";
 export { default as RecursionFive } from "./js-content/recursion/RecursionFive";
 export { default as Strings } from "./js-content/strings/Strings";
 export { default as StringsTwo } from "./js-content/strings/StringsTwo";
+
+// React Content Sections
+export { default as Components } from "./react-content/components/Components";

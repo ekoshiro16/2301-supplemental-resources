@@ -9,6 +9,7 @@ import {
   BigONotationTwo,
   BigONotationThree,
   BigONotationFour,
+  Components,
   InPlaceAlgos,
   Navbar,
   Objects,
@@ -38,8 +39,8 @@ const Homepage = () => {
   ];
 
   const reactSections = [
+    "Components",
     "JSX",
-    "Functional Components",
     "Props",
     "State",
     "Hooks",
@@ -139,6 +140,13 @@ const Homepage = () => {
       section: "Recursion",
       content: <RecursionFive />,
       page: 5,
+    },
+
+    // React Content
+    {
+      section: "Components",
+      content: <Components />,
+      page: 1,
     },
   ];
 
