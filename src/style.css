@@ -322,10 +322,10 @@ a.active {
     #1e90ff,
     #ffd700
   );
-  background-size: 200% 200%;
+  background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; /* Hide the original text color */
+  color: transparent;
 }
 
 .pagination-buttons-cont {
