@@ -303,6 +303,15 @@ a.active {
   width: 80%;
 }
 
+#ellipsis-and-buttons-cont {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 1.2%;
+}
+
 .ellipsis-pagination-cont {
   position: relative;
   font-size: 14px;
@@ -326,6 +335,7 @@ a.active {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  height: 45%;
 }
 
 .pagination-buttons-cont {
@@ -341,8 +351,9 @@ a.active {
   padding: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: opacity 0.5s ease-in-out;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
+  height: 45%;
 }
 
 .ellipsis-pagination-cont:hover + .pagination-buttons-cont,
@@ -374,6 +385,7 @@ a.active {
   background-color: #b3b4dd;
   color: black;
   border-color: black;
+  cursor: pointer;
 }
 
 .pagination-buttons-cont button:focus {

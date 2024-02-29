@@ -302,9 +302,11 @@ const Homepage = () => {
                 &#8592;
               </button>
 
-              <div className="ellipsis-pagination-cont">...</div>
-              <div className="pagination-buttons-cont">
-                {renderPaginationButtons()}
+              <div id="ellipsis-and-buttons-cont">
+                <div className="ellipsis-pagination-cont">...</div>
+                <div className="pagination-buttons-cont">
+                  {renderPaginationButtons()}
+                </div>
               </div>
 
               <button
