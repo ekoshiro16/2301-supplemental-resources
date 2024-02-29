@@ -2,6 +2,7 @@ export { default as AsideNav } from "./AsideNav";
 export { default as CodeEditor } from "./CodeEditor";
 export { default as Homepage } from "./Homepage";
 export { default as Navbar } from "./Navbar";
+export { default as PagesEllipsis } from "./PagesEllipsis";
 
 // JS Content Sections
 export { default as Arrays } from "./js-content/arrays/Arrays";
@@ -26,3 +27,4 @@ export { default as StringsTwo } from "./js-content/strings/StringsTwo";
 // React Content Sections
 export { default as Components } from "./react-content/components/Components";
 export { default as ComponentsTwo } from "./react-content/components/ComponentsTwo";
+export { default as ComponentsThree } from "./react-content/components/ComponentsThree";

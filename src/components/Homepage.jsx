@@ -11,6 +11,7 @@ import {
   BigONotationFour,
   Components,
   ComponentsTwo,
+  ComponentsThree,
   InPlaceAlgos,
   Navbar,
   Objects,
@@ -153,6 +154,11 @@ const Homepage = () => {
       section: "Components",
       content: <ComponentsTwo />,
       page: 2,
+    },
+    {
+      section: "Components",
+      content: <ComponentsThree />,
+      page: 3,
     },
   ];
 
