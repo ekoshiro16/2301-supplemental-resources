@@ -7,8 +7,8 @@
   --link-color: white;
   --link-hover-color: #7cd4fb;
   --border-color: white;
-  --font-main: "Press Start 2P", cursive;
-  --font-heading: "Press Start 2P", cursive;
+  --font-main: "Press Start 2P", sans-serif;
+  --font-heading: "Press Start 2P", sans-serif;
 }
 
 /* @keyframes pulse {
@@ -358,12 +358,12 @@ a.active {
 
 .ellipsis-pagination-cont:hover + .pagination-buttons-cont,
 .pagination-buttons-cont:hover {
-  display: flex;
+  /* display: flex;
   flex-flow: row wrap;
   opacity: 1;
   pointer-events: auto;
   background-color: black;
-  border: none;
+  border: none; */
 }
 
 .pagination-buttons-cont button {
