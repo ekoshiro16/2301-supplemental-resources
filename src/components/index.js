@@ -2,7 +2,6 @@ export { default as AsideNav } from "./AsideNav";
 export { default as CodeEditor } from "./CodeEditor";
 export { default as Homepage } from "./Homepage";
 export { default as Navbar } from "./Navbar";
-export { default as PagesEllipsis } from "./PagesEllipsis";
 
 // JS Content Sections
 export { default as Arrays } from "./js-content/arrays/Arrays";
